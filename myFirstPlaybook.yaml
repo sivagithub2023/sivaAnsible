@@ -10,7 +10,7 @@
 
   - name: Instal Git
     apt:
-      name: Git
+      name: git
       state: present  
 
  
