@@ -1,5 +1,7 @@
 [mynodes]
 10.2.0.5
-
-[rednodes]
 10.2.0.6
+
+[mynodes:vars]
+mypackonubuntu= apache2
+mypackonredhat= httpd

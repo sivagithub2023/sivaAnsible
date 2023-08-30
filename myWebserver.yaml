@@ -1,10 +1,10 @@
 ---
-- hosts: rednodes
+- hosts: mynodes
   become: yes
   tasks:
   - name: I want to install apache2 webserver
     apt:
-     name: apache2
+     name: {{mypackonubuntu}}
      state: present
     when: ansible_os_family=="Debian"
 
@@ -16,6 +16,6 @@
 
   - name: I want to install redhat
     dnf:
-      name: httpd
+      name: {{mypackonredhat}}
       state: present
     when: ansible_os_family=="RedHat"
