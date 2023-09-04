@@ -1,5 +1,5 @@
 ---
-- hosts: mynodes
+- hosts: mynodess
   become: yes
   tasks:
   - name: I want to install apache2 webserver
