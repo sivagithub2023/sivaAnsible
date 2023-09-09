@@ -8,4 +8,5 @@
 
   tasks:
   - name: Iwant to display myvar01
-    debug: "{{myvar01}}"
+    debug: 
+    msg: "{{myvar01}}"
